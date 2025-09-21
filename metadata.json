@@ -1,0 +1,7 @@
+{
+  "name": "Multi-LLM Memory Chat",
+  "description": "A frontend for a conversational AI application with memory and web search capabilities, powered by the Gemini API. Engage in dynamic, context-aware conversations.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

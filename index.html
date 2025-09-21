@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-LLM Memory Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-primary: #111827; /* bg-gray-900 */
+        --bg-secondary: #1F2937; /* bg-gray-800 */
+        --bg-tertiary: #374151; /* bg-gray-700 */
+        --bg-interactive: #4B5563; /* bg-gray-600 */
+        --border-primary: #374151; /* border-gray-700 */
+        --text-primary: #F9FAFB; /* text-gray-50 */
+        --text-secondary: #D1D5DB; /* text-gray-300 */
+        --text-muted: #9CA3AF; /* text-gray-400 */
+        --accent-primary: #2563EB; /* bg-blue-600 */
+        --accent-secondary: #14B8A6; /* text-teal-400 */
+      }
+      html.oled-black {
+        --bg-primary: #000000;
+        --bg-secondary: #111111;
+        --bg-tertiary: #222222;
+        --bg-interactive: #333333;
+        --border-primary: #222222;
+      }
+      html.vscode-dark {
+        --bg-primary: #1E1E1E;
+        --bg-secondary: #252526;
+        --bg-tertiary: #333333;
+        --bg-interactive: #3C3C3C;
+        --border-primary: #3C3C3C;
+        --accent-primary: #007ACC;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
